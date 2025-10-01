@@ -10,6 +10,7 @@
             "includePath": [
                 "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/include",
                 "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/src",
+                "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/.pio/libdeps/firebeetle32/ESP32Servo/src",
                 "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -246,6 +247,7 @@
                 "path": [
                     "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/include",
                     "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/src",
+                    "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/.pio/libdeps/firebeetle32/ESP32Servo/src",
                     "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/HP/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",

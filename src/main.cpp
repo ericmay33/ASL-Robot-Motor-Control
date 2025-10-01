@@ -1,25 +1,30 @@
 #include <Arduino.h>
+#include <ESP32Servo.h>
 
 // put function declarations here:
-int myFunction(int, int);
+Servo indexFinger;
+Servo middle;
+Servo ring;
+Servo pinky;
+Servo thumb;
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(LED_BUILTIN, OUTPUT);
+  // put your setup code here, to run once (pin setup)
+  indexFinger.attach(D2);
+  middle.attach(D3);
+  ring.attach(D4);
+  pinky.attach(D8);
+  thumb.attach(D7);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println("LED ON");
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-
-  Serial.println("LED OFF");
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
+  // Open hand
+  indexFinger.write(0);
+  middle.write(0);
+  ring.write(0);
+  pinky.write(0);
+  thumb.write(170);
 }
 
 // put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}

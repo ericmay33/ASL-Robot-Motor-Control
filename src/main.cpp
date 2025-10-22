@@ -1,30 +1,41 @@
+#include <Servo.h>
 #include <Arduino.h>
-#include <ESP32Servo.h>
 
-// put function declarations here:
-Servo indexFinger;
-Servo middle;
-Servo ring;
-Servo pinky;
-Servo thumb;
+#define NUM_SERVOS 5
+Servo servos[NUM_SERVOS];
+int servoPins[NUM_SERVOS] = {2, 3, 4, 5, 6}; 
 
 void setup() {
-  // put your setup code here, to run once (pin setup)
-  indexFinger.attach(D2);
-  middle.attach(D3);
-  ring.attach(D4);
-  pinky.attach(D8);
-  thumb.attach(D7);
+  Serial.begin(9600);
+  for (int i = 0; i < NUM_SERVOS; i++) {
+    servos[i].attach(servoPins[i]);
+    servos[i].write(90);  // start neutral
+  }
+  Serial.println("Arduino Ready");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  // Open hand
-  indexFinger.write(0);
-  middle.write(0);
-  ring.write(0);
-  pinky.write(0);
-  thumb.write(170);
-}
+  if (Serial.available()) {
+    String data = Serial.readStringUntil('\n');
+    data.trim();
 
-// put function definitions here:
+    // Split incoming string by commas
+    int angles[NUM_SERVOS];
+    int index = 0;
+    char buf[data.length() + 1];
+    data.toCharArray(buf, sizeof(buf));
+    char *token = strtok(buf, ",");
+    while (token != NULL && index < NUM_SERVOS) {
+      angles[index++] = atoi(token);
+      token = strtok(NULL, ",");
+    }
+
+    // Move servos to the angles
+    for (int i = 0; i < NUM_SERVOS; i++) {
+      servos[i].write(angles[i]);
+    }
+
+    Serial.print("Moved to: ");
+    Serial.println(data);
+  }
+}

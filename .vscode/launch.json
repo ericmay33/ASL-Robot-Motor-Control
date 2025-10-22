@@ -12,9 +12,9 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/.pio/build/firebeetle32/firmware.elf",
-            "projectEnvName": "firebeetle32",
-            "toolchainBinDir": "C:/Users/HP/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "executable": "/Users/shawnacheampong/Desktop/ASLRobotMotorControl/ASL-Robot-Motor-Control/.pio/build/mega2560/firmware.elf",
+            "projectEnvName": "mega2560",
+            "toolchainBinDir": "/Users/shawnacheampong/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
                 "type": "PlatformIO",
@@ -25,18 +25,18 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/.pio/build/firebeetle32/firmware.elf",
-            "projectEnvName": "firebeetle32",
-            "toolchainBinDir": "C:/Users/HP/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "executable": "/Users/shawnacheampong/Desktop/ASLRobotMotorControl/ASL-Robot-Motor-Control/.pio/build/mega2560/firmware.elf",
+            "projectEnvName": "mega2560",
+            "toolchainBinDir": "/Users/shawnacheampong/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
         {
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "C:/Users/HP/Documents/PlatformIO/Projects/ASL-Robot-Motor-Control/.pio/build/firebeetle32/firmware.elf",
-            "projectEnvName": "firebeetle32",
-            "toolchainBinDir": "C:/Users/HP/.platformio/packages/toolchain-xtensa-esp32/bin",
+            "executable": "/Users/shawnacheampong/Desktop/ASLRobotMotorControl/ASL-Robot-Motor-Control/.pio/build/mega2560/firmware.elf",
+            "projectEnvName": "mega2560",
+            "toolchainBinDir": "/Users/shawnacheampong/.platformio/packages/toolchain-atmelavr/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
         }
